@@ -145,6 +145,7 @@
      height: 55px;
      border-radius: 10px;
      border: none;
+     margin-bottom: 10px;
 
      font-family: 'Verdana';
      background-color: #514988;
@@ -167,9 +168,87 @@ button:hover {
 
  footer{
     text-align: center;
-    font-size: 1em;
+    font-size: 1.3em;
     color: #FFD900;
     background-color: #514988;
-    
+
+
  }
 
+ .carousel {
+    border: 5px solid #514988;
+   
+ 
+ }
+
+
+ #corre {
+    color: #514988;
+    font-weight: 700;
+    
+    
+    font-size:3em;
+    text-align: center;
+    
+    text-shadow: 0 0 100px #FFD900, 0 0 30px #FFD900 ;
+    display: inline-block;
+    animation: text 0.5s ease-in-out infinite;
+    
+ }
+ @keyframes text {
+    0%{
+        transform: none;        
+        animation-delay: 1s;
+    }
+    10%{
+        transform: scale(1);          
+        animation-delay: 1;
+    }
+    20%{
+        transform: scale(0.9);          
+        animation-delay: 1;
+        
+    }
+    30%{
+       
+        transform: scale(0.8);
+        animation-delay: 1;
+    }
+    40%{
+        
+        transform: scale(0.7);
+        animation-delay: 1;
+    }
+    50%{
+        transform: scale(0.6);          
+        animation-delay: 1;
+        
+        
+    }
+    60%{
+        transform: scale(0.6);          
+        animation-delay: 1;
+        
+    }
+    70%{
+       
+        transform: scale(0.7);          
+        animation-delay: 1;
+                    
+    }
+    80%{
+        transform: scale(0.8);          
+        animation-delay: 1;
+    }  
+    90%{
+        transform: scale(0.9);          
+        animation-delay: 1;
+    
+    }
+    100%{
+        transform: none;
+      
+        animation-delay: 1s;
+    }
+ }
+ 
