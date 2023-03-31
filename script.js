@@ -100,7 +100,7 @@ const min = document.querySelector('#min');
 const sec = document.querySelector('#sec');
 
 
-const lancamento = "12 nov 2023";
+const lancamento = "23 jun 2023";
 
 function countDown() {
     const dataLanc = new Date(lancamento);

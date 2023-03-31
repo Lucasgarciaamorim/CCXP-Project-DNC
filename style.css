@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Verdana';
 }
+html{
+    width: 100%;
+}
 
 header {
     display: flex;
@@ -40,7 +43,7 @@ header img {
     color: #FFD900;
     text-align: center;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.3em;
 
     line-height: 30px;
 
@@ -51,17 +54,20 @@ header img {
     color: #FFF;
     text-align: center;
     align-items: center;
-    font-weight: bold;
-    font-size: calc(12px + 1.2vw);
+    font-weight: 700;
+    font-size: 1.4em;
     margin-bottom: 35px;
     margin-top: 15px;
 }
 
 #conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #FFF;
     font-weight: 800;
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 30px;
     padding: 4px;
 
@@ -73,13 +79,21 @@ header img {
 #countdown {
     display: grid;
     grid-auto-flow: column;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+   
+    
+   
 
     font-weight: 700;
     font-size: 1.9em;
     line-height: 70px;
     color: #514988;
 
+}
+.cd{
+    margin-left: 8px;
 }
 
 #aviso {
@@ -90,7 +104,14 @@ header img {
 }
 
 #video {
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 #ing1 {
@@ -141,5 +162,12 @@ button:active{
     transform: scale(1.1);
     transition: 0.5s;
 
+}
+
+
+.carousel {
+    display: flex;
+    width: 100%;
+   
 }
 
