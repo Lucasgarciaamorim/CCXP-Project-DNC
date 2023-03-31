@@ -120,7 +120,7 @@
  #ing1 {
      color: #FFD900;
      font-weight: 700;
-     font-size: 2em;
+     font-size: 1.3em;
      text-align: center;
 
 
@@ -140,7 +140,8 @@
      align-items: center;
      margin-left: auto;
      margin-right: auto;
-     width: 400px;
+     width: 100%;
+     margin-top: 30px;
      height: 55px;
      border-radius: 10px;
      border: none;
@@ -156,9 +157,11 @@
 
 button:hover {
      background-color: #FFD900;
-     transform: scale(1.1);
+     transform: scale(0.9);
      transition: 0.5s;
- } 
+     color: #514988;
+     
 
- 
+     
+ } 
 
