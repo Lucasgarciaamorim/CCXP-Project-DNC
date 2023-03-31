@@ -87,7 +87,7 @@ header img {
    
 
     font-weight: 700;
-    font-size: 1.9em;
+    font-size: 2.2em;
     line-height: 70px;
     color: #514988;
 
@@ -97,6 +97,7 @@ header img {
 }
 
 #aviso {
+   
     color: #e33881;
     font-weight: 700;
     font-size: 1em;
@@ -119,7 +120,7 @@ header img {
     font-weight: 700;
     font-size: 2em;
     text-align: center;
-    margin-bottom: -80px;
+   
 
 }
 
@@ -131,6 +132,7 @@ header img {
 
 
 button{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +146,7 @@ button{
    font-family: 'Verdana';
    background-color: #514988;
    color: white;
-   font-size: 1em;
+   font-size: 0.8em;
    font-weight: 700;
 
    
@@ -164,10 +166,4 @@ button:active{
 
 }
 
-
-.carousel {
-    display: flex;
-    width: 100%;
-   
-}
 
