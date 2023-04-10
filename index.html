@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="/style.css">
-
     <!-- Main JS -->
     <script src="/script.js" defer></script>
-    
+
     <link rel="icon" id="iconLogo" type="image/png" href="/img/LogoIcon.png">
     <title>REVIVA O EPICO</title>
 </head>
 
 <body>
+    <!-- Header Start -->
     <header>
         <img src="/img/logo.svg" alt="CCXP">
     </header>
@@ -32,7 +32,7 @@
                 Valley, se emocionar nos auditórios e encontrar aventuras épicas a
                 cada passo pelos nossos corredores.</P>
         </div>
-            <!-- Cronômetro  -->
+        <!-- Cronômetro  -->
         <div id="inter">
             <div id="countdown">
                 <p class="cd" id="data"></p>
@@ -49,7 +49,10 @@
             </div>
         </div>
 
+        <!-- Header End -->
+
     </section>
+    <!-- Section Start -->
     <!-- parte de seleção e botão com compra de ingresso -->
     <section id="compre">
         <div id="ingressos">
@@ -57,33 +60,32 @@
                 <p id="text1"><strong>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS <div id="corre">CORRE!</div> </strong></p>
             </div>
             <div id="ing2">
-                
-                <img src="/img/qui.svg" class="card" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')"onmouseout="highlightCard('#quinta')" id="quinta" alt="">
-                <img src="/img/sex.svg"class="card"onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')"onmouseout="highlightCard('#sexta')" id="sexta" alt="">
-                <img src="/img/sab.svg"class="card"onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')"onmouseout="highlightCard('#sabado')" id="sabado" alt="">
-                <img src="/img/dom.svg"class="card"onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')"onmouseout="highlightCard('#domingo')" id="domingo" alt="">
+
+                <img src="/img/qui.svg" class="card" onclick="selectCard('#quinta')"
+                    onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+                <img src="/img/sex.svg" class="card" onclick="selectCard('#sexta')"
+                    onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" alt="">
+                <img src="/img/sab.svg" class="card" onclick="selectCard('#sabado')"
+                    onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="">
+                <img src="/img/dom.svg" class="card" onclick="selectCard('#domingo')"
+                    onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id="domingo" alt="">
                 <button onclick="showSelectedCards()">GARANTA O SEU</button>
             </div>
             <div class="comprar">
-                
+
             </div>
-
-
         </div>
     </section>
-
-
-
-
-
-    
-    
-
-
-
+    <!-- Section End -->
+    <form action="https://github.com/Lucasgarciaamorim">
+        <input type="email" placeholder="Seu Email" required>
+        <input id = "btn-enviar" type="submit">
+    </form>
+    <!-- Footer Start -->
     <footer>
         <p>CCXP &copy; 2023</p>
     </footer>
+    <!-- Footer End -->
 </body>
 
 </html>
