@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
+    <!-- Main CSS -->
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+
+    <!-- Main JS -->
+    <script src="/script.js" defer></script>
+    
+    <link rel="icon" id="iconLogo" type="image/png" href="/img/LogoIcon.png">
+    <title>REVIVA O EPICO</title>
 </head>
 
 <body>
@@ -27,7 +32,7 @@
                 Valley, se emocionar nos auditórios e encontrar aventuras épicas a
                 cada passo pelos nossos corredores.</P>
         </div>
-
+            <!-- Cronômetro  -->
         <div id="inter">
             <div id="countdown">
                 <p class="cd" id="data"></p>
@@ -35,60 +40,50 @@
                 <p class="cd" id="min"></p>
                 <p class="cd" id="sec"></p>
             </div>
+
             <div>
                 <p id="aviso"><strong>PARA A MAIOR CCXP DE TODOS OS TEMPOS</strong></p>
             </div>
             <div id="video">
-                <video width="100%" play controls-none  muted src="/video/Arlequina.mp4" type="video/mp4"></video>
+                <video width="100%" controls-none autoplay muted src="/video/Arlequina.mp4" type="video/mp4"></video>
             </div>
         </div>
 
     </section>
+    <!-- parte de seleção e botão com compra de ingresso -->
     <section id="compre">
         <div id="ingressos">
-          
-             <div id="ing1">
-                <p id="text1"><strong>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS  <div id="corre">CORRE!</div> </strong></p>                         
-            </div> 
-            <button>GARANTA O SEU</button>
-            
-            
-            <div class="carousel">
-                <a class="carousel-item" href="#one!"><img src="/img/qui.svg"></a>
-                <a class="carousel-item" href="#two!"><img src="/img/sex.svg"></a>
-                <a class="carousel-item" href="#three!"><img src="/img/sab.svg"></a>
-                <a class="carousel-item" href="#four!"><img src="/img/dom.svg"></a>
-                <div>
-                    
-                </div>
+            <div id="ing1">
+                <p id="text1"><strong>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS <div id="corre">CORRE!</div> </strong></p>
+            </div>
+            <div id="ing2">
                 
+                <img src="/img/qui.svg" class="card" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')"onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+                <img src="/img/sex.svg"class="card"onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')"onmouseout="highlightCard('#sexta')" id="sexta" alt="">
+                <img src="/img/sab.svg"class="card"onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')"onmouseout="highlightCard('#sabado')" id="sabado" alt="">
+                <img src="/img/dom.svg"class="card"onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')"onmouseout="highlightCard('#domingo')" id="domingo" alt="">
+                <button onclick="showSelectedCards()">GARANTA O SEU</button>
+            </div>
+            <div class="comprar">
                 
             </div>
-            
 
-            
-
-
-            
 
         </div>
-        
-
-
     </section>
 
-    <!-- Jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Materialize JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Main JS -->
-    <script src="/script.js"></script>
-    <script src=""></script>
 
 
-<footer>
-    <p>Created by Lucas Garcia</p>
-</footer>
+
+
+    
+    
+
+
+
+    <footer>
+        <p>CCXP &copy; 2023</p>
+    </footer>
 </body>
 
 </html>
