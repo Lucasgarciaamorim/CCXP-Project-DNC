@@ -1,36 +1,23 @@
 
 
-//função cards ( do jeito que eu pensei em fazer)
-// bugs que ocorreram na tentativa: a função de selecionar pelo teclado nao funcionou
-//deu algum problema que não sou resolver
-
-//  let cards = document.querySelectorAll('.cards')
-// function changedScale(cards) {
-
-//    cards.style.transform = "scale(1.2)"
-//     cards.style.transition = "0.4s"
-
-//  }
-
-// function normalScale(cards) {
-//      cards.style.transform = "none"
-
-//  }
 
 //cronômetro
 
+const dia = document.getElementById('data');
+const hora = document.getElementById('hour');
+const min = document.getElementById('min');
+const sec = document.getElementById('sec');
 
-const dia = document.querySelector('#data');
-const hora = document.querySelector('#hora');
-const min = document.querySelector('#min');
-const sec = document.querySelector('#sec');
+const lancamento = "31 oct 2023"
 
 
-const lancamento = "23 jun 2023";
 
 function countDown() {
     const dataLanc = new Date(lancamento);
+
     const hoje = new Date();
+
+
 
     const segTotal = (dataLanc - hoje) / 1000;
 
@@ -46,93 +33,117 @@ function countDown() {
 
 }
 
+
 function formatoTempo(tempo) {
     return tempo < 10 ? `0${tempo}` : tempo;
 }
 countDown();
-setInterval(countDown,);
+setInterval(countDown, 1000);
 
 
-//Cards
+
+//change with Mouseover and Mouseout
 
 
-function highlightCard(selector) {
 
-    var element = document.querySelector(selector);
+let sabado = document.querySelector('#sabado')
+sabado.classList.add('card-off')
+
+
+function highlightCards(selector) {
+    let element = document.querySelector(selector);
+
+    
     element.classList.toggle("card-highlight");
-
-    for (let i = 0; i < element; i++) {
-        if (element[i] !== selectedElement) {
-            element[i].classList.add("card-opacity");
-
-        }
-    }
 
 
 }
+
+
 
 //change with Keyboard
 
 function addKeyboardEventListeners() {
     document.addEventListener('keydown', (event) => {
 
-        var ingresso1 = document.getElementById('quinta')
-        var ingresso2 = document.getElementById('sexta')
-        var ingresso3 = document.getElementById('sabado')
-        var ingresso4 = document.getElementById('domingo')
+        let ingresso1 = document.querySelector('#quinta');
+        let ingresso2 = document.querySelector('#sexta');
+        let ingresso3 = document.querySelector('#sabado');
+        let ingresso4 = document.querySelector('#domingo');
 
 
+        let code = event.code;
 
 
-        var code = event.code;
-        if (code == 'Digit1') {
-            ingresso1.classList.toggle('card-highlight')
-            ingresso2.classList.remove('card-highlight')
-            ingresso3.classList.remove('card-highlight')
-            ingresso4.classList.remove('card-highlight')
-
-
+        if (code == "Digit1") {
+            ingresso1.classList.toggle("card-highlight");
+            ingresso2.classList.remove("card-highlight");
+            ingresso3.classList.remove("card-highlight");
+            ingresso4.classList.remove("card-highlight");
+            
 
         }
-        if (code == 'Digit2') {
-            ingresso1.classList.remove('card-highlight')
-            ingresso2.classList.toggle('card-highlight')
-            ingresso3.classList.remove('card-highlight')
-            ingresso4.classList.remove('card-highlight')
+
+        if (code == "Digit2") {
+            ingresso1.classList.remove("card-highlight");
+            ingresso2.classList.toggle("card-highlight");
+            ingresso3.classList.remove("card-highlight");
+            ingresso4.classList.remove("card-highlight");
         }
-        if (code == 'Digit3') {
-            ingresso1.classList.remove('card-highlight')
-            ingresso2.classList.remove('card-highlight')
-            ingresso3.classList.toggle('card-highlight')
-            ingresso4.classList.remove('card-highlight')
+
+        if (code == "Digit3") {
+            ingresso1.classList.remove("card-highlight");
+            ingresso2.classList.remove("card-highlight");
+            ingresso3.classList.toggle("card-highlight");
+            ingresso4.classList.remove("card-highlight");
         }
-        if (code == 'Digit4') {
-            ingresso1.classList.remove('card-highlight')
-            ingresso2.classList.remove('card-highlight')
-            ingresso3.classList.remove('card-highlight')
-            ingresso4.classList.toggle('card-highlight')
+
+        if (code == "Digit4") {
+            ingresso1.classList.remove("card-highlight");
+            ingresso2.classList.remove("card-highlight");
+            ingresso3.classList.remove("card-highlight");
+            ingresso4.classList.toggle("card-highlight");
         }
+
     }, false);
+
 }
 
-
-
+//adicionar ingressos em uma lista
 
 const ingressos = []
+
+//array vazio de ingressos
+//includes = verifica se o item ja ta dentro do Array
+//pop = remove o ultimo elemento 
+//push = adiciona ao final do array
 
 
 function selectCard(selector) {
     let element = document.querySelector(selector);
+
     element.classList.toggle('card-selected');
-    if(ingressos.includes(selector)) ingressos.pop(selector);
-    else ingressos.push(selector)
+
+    if (ingressos.includes(selector)) ingressos.pop(selector);
+
+    else ingressos.push(selector);
 
 }
 
-function showSelectedCards()
-{
-    if(ingressos.length > 0 ) alert ("Ingressos Selecionados:" + ingressos);
+
+//função para mostrar os cards selecionados 
+function showSelectedCards() {
+    if (ingressos.length > 0) alert("Ingressos Selecionados:" + ingressos);
 
 }
 
 addKeyboardEventListeners();
+
+
+
+
+
+
+
+
+
