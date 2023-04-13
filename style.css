@@ -1,3 +1,8 @@
+
+
+
+/* Mobile First */
+
 * {
     margin: 0;
     padding: 0;
@@ -42,21 +47,30 @@ header img {
 }
 
 #titulo {
-    text-align: center;
-    color: #f3c61f;
     margin-top: 10px;
-    font-weight: 700;
+   
+    color: #f3c61f;
+    
     font-size: 2.3em;
+    font-weight: 700;
     line-height: 35px;
+    text-align: center;              
 }
 
 #dataEvento {
-    color: #FFF;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.4rem;
     margin-top: 15px;
+    
+    color: #FFF;
+
+    font-size: 1.4rem;
+    font-weight: 700;
     line-height: 35px;
+    
+    text-align: center;
+    
+   
+    
+    
 }
 
 #conteudo {
