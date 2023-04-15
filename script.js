@@ -47,7 +47,7 @@ setInterval(countDown, 1000);
 
 
 let sabado = document.querySelector('#sabado')
-sabado.classList.add('card-off')
+sabado.classList.add('card-off');
 
 
 function highlightCards(selector) {
@@ -59,6 +59,9 @@ function highlightCards(selector) {
 
 }
 
+function desabilitado(){
+    alert('Ingresso Esgotado')
+}
 
 
 //change with Keyboard

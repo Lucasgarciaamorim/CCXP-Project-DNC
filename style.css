@@ -189,10 +189,10 @@ footer {
 }
 
 #enviar:hover {
-    background-color: #ffd900;
+    background-color: #514988;
     transform: scale(0.9);
     transition: .4s;
-    color: #514988;
+    color: white;
 
 }
 
@@ -208,6 +208,15 @@ footer {
     transform: scale(1.1);
     filter: drop-shadow(0 0 0.75rem rgb(12, 0, 187));
 }
+
+
+
+
+
+
+
+
+/* Media Query  */
 @media screen and (min-width: 800px) {
 
     .section1 {
@@ -306,7 +315,7 @@ footer {
 @media only screen and (min-width: 1200px) {
 
     #conteudo {
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-weight: 200;
         line-height: 40px;
     }
@@ -317,7 +326,7 @@ footer {
     }
 
     .card {
-        width: 250px;
+        width: 200px;
         cursor: pointer;
 
     }

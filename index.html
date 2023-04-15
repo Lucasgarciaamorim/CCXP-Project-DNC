@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
+
     <title>CCXP 2022</title>
 </head>
 
 <body>
     <!-- ======= Header Start ====== -->
     <header>
-        <img src="/img/logo.svg" alt="Logotipo DNC " id="imgLogo">
+       <a href="#"> <img src="/img/logo.svg" alt="Logotipo DNC " id="imgLogo"></a>
     </header>
     <!-- ======= Header End ====== -->
     <!-- ======= Section  Start ====== -->
@@ -30,6 +31,7 @@
                 cada passo pelos nossos corredores.
             </p>
         </div>
+        <!-- ======= Section End ====== -->
 
         <!-- ======= Cronômetro Start ====== -->
         <div id="inter">
@@ -45,8 +47,8 @@
                 <p id="aviso">PARA A MAIOR CCXP DE TODOS OS TEMPOS</p>
             </div>
             <div id="video">
-                <video width="100%" src="/video/Arlequina.mp4" type="video/mp4" controls-none  muted loop autoplay
-                    ></video>
+                <video width="100%" src="/video/Arlequina.mp4" type="video/mp4" controls-none muted loop
+                    autoplay></video>
 
             </div>
         </div>
@@ -67,14 +69,14 @@
                         onmouseover="highlightCards('#sexta')" onclick="selectCard('#sexta')" onmouseout="
                         highlightCards('#sexta')">
 
-                    <img src="/img/sab.svg" class="card" id="sabado" alt="Ingresso de Sábado" onclick="desabilitado()"               
-                        >
+                    <img src="/img/sab.svg" class="card" id="sabado" alt="Ingresso de Sábado" onclick="desabilitado()">
 
                     <img src="/img/dom.svg" class="card" id="domingo" alt="Ingresso de Domingo"
                         onmouseover="highlightCards('#domingo') " onclick="selectCard('#domingo')" onmouseout="
                         highlightCards('#domingo')">
                 </div>
                 <!-- ======= Cards End====== -->
+
                 <div>
                     <button id="comprar" onclick="showSelectedCards()">GARANTA O SEU</button>
                 </div>
@@ -86,7 +88,7 @@
         <form action="https://github.com/Lucasgarciaamorim">
             <input type="email" autocomplete="off" name="*" placeholder="Seu Email" required id="selectEmail">
 
-            <!-- <input type="submit" name="" autocomplete="off" id="btn-enviar"> -->
+           
         </form>
         <button id="enviar">Enviar</button>
 
